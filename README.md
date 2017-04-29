@@ -1,25 +1,8 @@
-# README
+# Dashboard with RoR and Dashing.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Dashboard-with-RoR
+- app/views/dashing/dashboards — One .erb file for each dashboard that contains the layout for the widgets.
+- app/jobs — Your ruby jobs for fetching data (e.g for calling third party APIs like twitter).
+- app/assets/javascripts/dashing/widgets/ — A widget's name .coffee file containing your widget's js.
+- app/assets/stylesheets/dashing/widgets/ — A widget's name .scss file containing your widget's css.
+- app/views/dashing/widgets/ — A widget's name .html file containing your widget's html.
+- app/views/layouts/dashing/ — All your custom layouts where your dashboards and widgets will be included.
