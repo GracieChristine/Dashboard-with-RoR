@@ -1,0 +1,36 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #8345dd;
+
+// ----------------------------------------------------------------------------
+// Widget-clock styles
+// ----------------------------------------------------------------------------
+.widget-clock {
+
+  background-color: $background-color;
+
+  h1 {
+    font-size:+3em;
+    text-shadow:
+     -1px -1px 0 #ffffff,
+     1px -1px 0 #ffffff,
+     -1px 1px 0 #ffffff,
+     1px 1px 0 #ffffff;
+  }
+
+  h2 {
+    font-size:+3em;
+    text-shadow:
+     -1px -1px 0 #ffffff,
+     1px -1px 0 #ffffff,
+     -1px 1px 0 #ffffff,
+     1px 1px 0 #ffffff;
+  }
+  .second-time {
+    font-size:+2em;
+  }
+  .third-time {
+    font-size:+1em;
+  }
+}
