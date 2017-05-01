@@ -12,7 +12,7 @@ format = "f"
 
 query  = URI::encode "select * from weather.forecast WHERE woeid=#{woeid} and u='#{format}'&format=json"
 
-Dashing.scheduler.every "5m", :first_in => 0 do |job|
+Dashing.scheduler.every "15m", :first_in => 0 do |job|
   http     = Net::HTTP.new "query.yahooapis.com"
   request  = http.request Net::HTTP::Get.new("/v1/public/yql?q=#{query}")
   response = JSON.parse request.body
