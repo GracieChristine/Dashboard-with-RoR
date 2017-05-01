@@ -1,4 +1,4 @@
-class Dashing.Klimato extends Dashing.Widget
+class Dashing.Weather2 extends Dashing.Widget
 
   onData: (data) ->
     @setBackgroundClassBy parseInt(data.temperature, 10), data.format
@@ -7,13 +7,13 @@ class Dashing.Klimato extends Dashing.Widget
     @removeBackgroundClass()
 
     colorLevel = @findColorLevelBy temperature, format
-    $(@node).addClass "klimato-temperature-#{colorLevel}"
+    $(@node).addClass "weather2-temperature-#{colorLevel}"
 
   removeBackgroundClass: ->
     classNames = $(@node).attr("class").split " "
 
     for className in classNames
-      match = /klimato-temperature-(.*)/.exec className
+      match = /weather2-temperature-(.*)/.exec className
       $(@node).removeClass match[0] if match
 
   findColorLevelBy: (temperature, format) ->
