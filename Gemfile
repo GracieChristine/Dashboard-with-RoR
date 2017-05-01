@@ -43,6 +43,11 @@ gem 'nokogiri'
 
 gem 'xml-simple'
 
+# instagram - Official Ruby Gem
+git 'https://github.com/Instagram/instagram-ruby-gem.git' do
+  gem 'instagram'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
