@@ -9,6 +9,9 @@ class Dashing.Todoist extends Dashing.Widget
     # You could do something like have the widget flash each time data comes in by doing:
     # $(@node).fadeOut().fadeIn()
     @setColour(@get('todoist_trend'))
+    limit = parseInt($(@node).data('limit')) - 1
+    if limit?
+        data.items = data.items[0..limit]
 
   setColour: (trend) ->
     if trend

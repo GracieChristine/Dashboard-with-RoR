@@ -1,16 +1,10 @@
 <h1 class="title" data-bind="title"></h1>
 <div class="profile">
-  <h1>To Do List</h1>
-        <ul class="list-nostyle">
-                <li>
-                        <span class="label">Require : </span>
-                        <span class="value" data-bind="todoist_karma"></span>
+        <ul class="list-group">
+                <li class="list-group-item" data-foreach-item="items">
+                        <span class="value" data-bind="item"><span class="badge">12</span></span>
                 </li>
-                <br>
-                <li>
-                        <span class="label">Completed : </span>
-                        <span class="value" data-bind="todoist_completed"></span>
-                </li>
+
         </ul>
 </div>
 <p class="updated-at" data-bind="updatedAtMessage"></p>

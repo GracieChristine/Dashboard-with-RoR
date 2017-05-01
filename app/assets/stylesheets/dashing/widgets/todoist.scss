@@ -1,20 +1,12 @@
-// ----------------------------------------------------------------------------
-// Sass declarations
-// ----------------------------------------------------------------------------
-$background-color:  #bb4747;
-$value-color:       #fff;
+$background-color: #47bbb3;
+$value-color: #fff;
+$title-color: rgba(255, 255, 255, 0.7);
+$label-color: rgba(255, 255, 255, 0.7);
+$moreinfo-color: rgba(255, 255, 255, 0.7);
 
-$title-color:       rgba(255, 255, 255, 0.7);
-$label-color:       rgba(255, 255, 255, 0.7);
-$moreinfo-color:    rgba(255, 255, 255, 0.7);
-
-// ----------------------------------------------------------------------------
-// Widget-todoist styles
-// ----------------------------------------------------------------------------
 .widget-todoist {
-
   background-color: $background-color;
-  padding: 25px 12px;
+  /*padding: 25px 12px;*/
   width: 100%;
   display: table-cell;
   vertical-align: middle;
@@ -24,15 +16,14 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   }
 
   .label {
-        color: $label-color;
-        text-align: left;
-        float: left;
-        font-weight: 400;
-        color: $label-color;
+    color: $label-color;
+    text-align: left;
+    float: left;
+    font-weight: 400;
+    color: $label-color;
   }
 
   .value {
-    float: right;
     margin-left: 12px;
     font-weight: 600;
     color: $value-color;
@@ -51,5 +42,8 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   .updated-at {
     color: rgba(0, 0, 0, 0.3);
   }
+}
 
+.list-group-item {
+  background-color: initial;
 }
