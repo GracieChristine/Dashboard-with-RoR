@@ -3,7 +3,7 @@ require "json"
 
 # WOEID for location:
 # http://woeid.rosselliot.co.nz
-woeid  = 2367231
+woeid  = 2391279
 
 # Units for temperature:
 # f: Fahrenheit
@@ -21,6 +21,6 @@ Dashing.scheduler.every "5m", :first_in => 0 do |job|
   if results
     condition = results["channel"]["item"]["condition"]
     location  = results["channel"]["location"]
-    Dashing.send_event "klimato", { location: location["city"], temperature: condition["temp"], code: condition["code"], format: format }
+    Dashing.send_event "weather", { location: location["city"], temperature: condition["temp"], code: condition["code"], format: format }
   end
 end
