@@ -1,15 +1,17 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color: #8c8c8c;
+$background-color:  #939393;
+
 // ----------------------------------------------------------------------------
 // Widget-comment styles
 // ----------------------------------------------------------------------------
-
 .widget-instadash {
   background-color: $background-color;
-
+  padding: 0 !important;
+  margin: 0;
   .photo-container {
-    display: none;
+    display: block !important;
   }
+
 }
