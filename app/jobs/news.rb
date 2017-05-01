@@ -31,5 +31,5 @@ end
 
 Dashing.scheduler.every '15m', :first_in => 0 do |job|
   headlines = @BBC_News.latest_headlines
- 	Dashing.send_event('news', { :headlines => headlines})
+ 	Dashing.send_event('news', { :headlines => headlines, :headlines2 => headlines2})
 end

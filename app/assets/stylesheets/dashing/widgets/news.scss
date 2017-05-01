@@ -13,7 +13,8 @@ $moreinfo-color: rgba(255, 255, 255, 0.7);
   background-color: $background-color;
   vertical-align: baseline !important;
 
-  .headline-container {
+  .headline-container,
+  .headline2-container {
     display: none;
   }
 
@@ -34,7 +35,7 @@ $moreinfo-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
   }
   .title {
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 5px;
   }
   .description {
