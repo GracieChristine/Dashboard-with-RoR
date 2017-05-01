@@ -1,8 +1,9 @@
 <script type='text/javascript'>
- $(function() {
-   Dashing.gridsterLayout('[{"col":2,"row":1,"size_x":2,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":2},{"col":3,"row":3,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":2,"size_y":1}]')
- });
- </script>
+  $(function () {
+    Dashing.gridsterLayout('[{"col":2,"row":1,"size_x":2,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1},{"col":3,"row":3,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":2},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":1,' +
+        '"row":2,"size_x":2,"size_y":1}]')
+  });
+</script>
 
 <% content_for :title do %>
 My super sweet dashboard
@@ -14,8 +15,14 @@ My super sweet dashboard
       <div data-id="welcome" data-view="Text" data-title="Morning~~!" data-text="Don’t wait. The time will never be just right. Action is the foundational key to all success." data-moreinfo="Never, never, never give up."></div>
     </li>
 
+    <!-- Ticking Clock -->
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="clock" data-view="Clock" data-second-time-offset="-2" data-third-time-offset="3"></div>
+    </li>
+
+    <!-- Weather -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="klimato" data-view="Klimato"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -34,7 +41,7 @@ My super sweet dashboard
       <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
     </li>
   </ul>
-  <center>
+  <!-- <center>
     <div style="font-size: 12px">Try this: curl -X PUT 'http://<%= request.host %>:<%= request.port %>/dashing/widgets/welcome' -d "widget[text]=Dashing is awesome"</div>
-  </center>
+  </center> -->
 </div>
